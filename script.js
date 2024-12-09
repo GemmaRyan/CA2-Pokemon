@@ -9,7 +9,7 @@ try {
         const pokemons = data.results
         pokemons.forEach(pokemon => {
         document.getElementById('pokemons')
-            .insertAdjacentHTML('beforeend', `<li onclick='detail("${pokemon.url}")'>${pokemon.name}</li>`)     //this Lets the url insde the json to open and become accessible 
+            .insertAdjacentHTML('beforeend', `<li onclick='detail("${pokemon.url}")'>${pokemon.name}</li>`)     
         }) 
     })
     .catch(error => {
